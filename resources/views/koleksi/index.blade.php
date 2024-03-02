@@ -56,7 +56,7 @@
                                 <span id="nm_anggota_error" class="text-danger"></span>
                             </div>
                             <div class="mb-3">
-                                <label class="form-label">Jenis Kelamin</label>
+                                <label class="form-label">Jeni Kelamin</label>
                                 <select class="form-select" id="jk" name="jk" aria-label="jk">
                                     <option value="">Choose</option>
                                     <option value="Laki-laki">Laki-laki</option>
