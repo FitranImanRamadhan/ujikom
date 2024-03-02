@@ -1,20 +1,20 @@
 @extends('layout')
   
 @section('content')
-    <div class="container">
-        <div id="message">
-        </div>
-        <div class="card">
-            <div class="card-header">
-                <div class="row">
-                    <div class="col col-sm-9">Master Anggota</div>
-                    <div class="col col-sm-3">
-                        <button type="button" id="add_data" class="btn btn-success btn-sm float-end">Add</button>
-                    </div>
-                </div>
+div class="row justify-content-center">
+<div class="col-md-10">
+    <div class="card">
+        @if (session('success'))
+            <div class="alert alert-success" role="alert">
+                {{ session('success') }}
             </div>
-            <div class="card-body">
-                <div class="table-responsive">
+        @endif
+        <div class="card-header">{{ __('Master Pengguna') }}</div>
+
+        <div class="card-body">
+            <a href="{{ route('anggotas.create') }}" class="btn btn-sm btn-secondary">
+                Tambah Anggota
+            </a>
                     <table class="table table-striped table-bordered" id="sample_data">
                         <thead>
                             <tr>

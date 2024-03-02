@@ -56,7 +56,7 @@
                             <span class="hide-menu">UI COMPONENTS</span>
                         </li>
                         
-                    @if (Auth()->user()->hak_akses == 'admin')
+                
                     <li class="sidebar-item">
                         <a class="sidebar-link" href="{{ route('users.index') }}" aria-expanded="false">
                             <span>
@@ -65,7 +65,7 @@
                             <span class="hide-menu">User</span>
                         </a>
                     </li>
-                    @endif
+                    
                         <li class="sidebar-item">
                             <a class="sidebar-link"href="{{ route('anggotas.index') }}" aria-expanded="false">
                                 <span>
@@ -82,7 +82,22 @@
                                 <span class="hide-menu">Koleksi</span>
                             </a>
                         </li>
-                
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="{{ route('pinjams.index') }}" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-books"></i>
+                                </span>
+                                <span class="hide-menu">Transaksi Pinjam</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="{{ route('kembalis.index') }}" aria-expanded="false">
+                                <span>
+                                    <i class="ti ti-file"></i>
+                                </span>
+                                <span class="hide-menu">Trasaksi Kembali</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- End Sidebar navigation -->

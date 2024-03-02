@@ -16,6 +16,10 @@
                     <a href="{{ route('kembalis.create') }}" class="btn btn-sm btn-secondary">
                         Tambah Kembali
                     </a>
+                    <a href="{{ route('reports.index') }}" class="btn btn-sm btn-primary">
+                        Export
+                    </a>
+                    <div class="table table-responsive">
                     <table class="table" id="sample_data">
                         <thead>
                             <tr>
@@ -74,6 +78,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 <script>
     $(document).ready(function() {

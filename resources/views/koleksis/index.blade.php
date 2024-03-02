@@ -14,6 +14,10 @@
                         <a href="{{ route('koleksis.create') }}" class="btn btn-sm btn-secondary">
                             Tambah Koleksi
                         </a>
+
+                        <a href="{{ route('reports.index') }}" class="btn btn-sm btn-primary">
+                            Export
+                        </a>
                         <div class="table-responsive">
                         <table id="sample_data" class="table table-striped table-hover table-bordered">
                             <thead role="rowgroup">
@@ -79,6 +83,7 @@
                 </div>
             </div>
         </div>
+
 
 
 <script>
