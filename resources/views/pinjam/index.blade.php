@@ -16,6 +16,9 @@
                     <a href="{{ route('pinjams.create') }}" class="btn btn-sm btn-secondary">
                         Tambah Pinjam
                     </a>
+                    <a href="{{ route('reports.index') }}" class="btn btn-sm btn-primary">
+                        Export
+                    </a>
                     <table class="table" id="sample_data">
                         <thead>
                             <tr>
